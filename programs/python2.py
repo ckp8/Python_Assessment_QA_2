@@ -31,9 +31,13 @@ import random
 # How does a for loop iterate through a string?
 
 
-def one(string):
-    return 1 
-
+def one(_str):
+    result = ""
+    for chr in _str:
+        for i in range(3):
+            result = result + chr
+    return result
+   
     # <QUESTION 2>
 
     #  Write a function which returns the boolean True if the input is only divisible by one and itself.
