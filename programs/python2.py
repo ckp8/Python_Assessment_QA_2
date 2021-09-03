@@ -32,7 +32,7 @@ import random
 
 
 def one(string):
-    return
+    return 1 
 
     # <QUESTION 2>
 
