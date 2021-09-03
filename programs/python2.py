@@ -130,7 +130,12 @@ def four(string1, string2):
 
 
 def five():
-    return
+    result = []
+    while len(result) < 5:
+        x = random.randint(100,201)
+        if x % 2 == 0:
+            result.append(x)
+    return result
 
     # <QUESTION 6>
 
