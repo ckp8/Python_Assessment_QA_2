@@ -78,6 +78,8 @@ def two(num):
 
 
 def three(a):
+    result = a
+
     return
 
     # <QUESTION 4>
@@ -155,7 +157,7 @@ def five():
 
 
 def six(string):
-    return
+    return string.lower().endswith("py")
 
     # <QUESTION 7>
 
@@ -180,7 +182,12 @@ def six(string):
 
 
 def seven(a, b, c):
-    return
+    vals = [a,b,c]
+    vals.sort()
+
+    if vals[0]-vals[1] == vals [1] - vals[2]:
+        return True
+    return False 
 
     # <QUESTION 8>
 
@@ -199,7 +206,13 @@ def seven(a, b, c):
 
 
 def eight(string, num):
-    return
+    s = len(string) - num
+    l = s / 2
+    if s > 0:
+        return string[0: l] + string[l +num:]
+
+        
+    return ""
 
     # <QUESTION 9>
 
@@ -218,7 +231,18 @@ def eight(string, num):
 
 def nine(string1, string2):
     # make sure string1 is the shortest of the two
-    return
+    can = True
+
+    for s in string1:
+        if s not in string2:
+            can = False
+    
+    if not can:
+        can = True
+        for s in string2:
+            if s not in string1:
+                can = False
+    return can
 
     # <QUESTION 10>
 
