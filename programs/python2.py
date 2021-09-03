@@ -55,7 +55,12 @@ def one(_str):
 
 
 def two(num):
-    return
+    if num == 1:
+        return True
+    for i in range(2, num-1):
+        if num % i == 0:
+            return False
+    return True
 
     # <QUESTION 3>
 
@@ -103,7 +108,11 @@ def three(a):
 
 
 def four(string1, string2):
-    return
+    s3 = ""
+
+    for i in range(len(string1)):
+        s3 += string1[i] + string2[i]
+    return s3
 
     # <QUESTION 5>
 
